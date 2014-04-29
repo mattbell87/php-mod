@@ -1,4 +1,13 @@
 <?php
+/*
+
+    PHP-Mod
+
+    A simple utility class for manipulating html or include files. 
+
+    This may be useful for projects such as Wordpress child themes or plugins.
+
+*/
 
 class Mod
 {
