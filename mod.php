@@ -37,6 +37,11 @@ class Mod
     {
         $this->html = preg_replace($regex, "$0$html", $this->html);
     }
+    
+    function pregReplace($regex, $replacement)
+    {
+        $this->html = preg_replace($regex, $replacement, $this->html);
+    }
 
     function output() //Output some html
     {
@@ -62,6 +67,7 @@ class IncludeMod extends Mod
     function insertAfter($regex, $html){parent::insertAfter($regex, $html);}
     function append($html){parent::append($html);}
     function prepend($html){parent::prepend($html);}
+    function pregReplace($regex, $replacement){parent::pregReplace($regex, $replacement);}
 
 }
 
